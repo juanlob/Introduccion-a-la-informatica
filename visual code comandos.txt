@@ -1,0 +1,78 @@
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio
+$ git init 
+Initialized empty Git repository in C:/Users/Elena/Desktop/Repositorio/.git/
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (master)
+$ nano
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (master)
+$ ls
+'primer archivo.txt'  'segundo  archivo.txt'  'tercer  archivo.txt'
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (master)
+$ git branch -M main
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git add .
+warning: LF will be replaced by CRLF in primer archivo.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in segundo  archivo.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tercer  archivo.txt.
+The file will have its original line endings in your working directory
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   primer archivo.txt
+        new file:   segundo  archivo.txt
+        new file:   tercer  archivo.txt
+
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git commit -m "primer commit"
+[main (root-commit) 8a49af1] primer commit
+ 3 files changed, 3 insertions(+)
+ create mode 100644 primer archivo.txt
+ create mode 100644 segundo  archivo.txt
+ create mode 100644 tercer  archivo.txt
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git config --global user.name "juanlob"
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git config --global user.email "juanlob@hotmail.com"
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git remote add origen https://github.com/juanlob/Introduccion-a-la-informatica.git
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git remote add origin https://github.com/juanlob/Introduccion-a-la-informatica.git
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 381 bytes | 34.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juanlob/Introduccion-a-la-informatica.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Elena@DESKTOP-RVR8H1A MINGW64 ~/Desktop/Repositorio (main)
